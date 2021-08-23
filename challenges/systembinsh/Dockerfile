@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update && \
         apt-get -y upgrade && \
-        apt-get install -y
+        apt-get install -y \
                 xinetd \
                 iproute2
 
