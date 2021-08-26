@@ -18,7 +18,7 @@ services:
                         - default
                         - internal
                 depends_on:
-                        - ctf
+                        - where_is_systembinsh
 
 networks:
         default:
