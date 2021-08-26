@@ -1,17 +1,17 @@
 version: '3'
 
 services:
-        systembinsh:
+        where_is_systembinsh:
                 restart: always
                 build: ./
                 read_only: true
                 networks:
                         - internal
-        proxy0:
+        proxy1:
                 restart: always
                 image: nginx
                 ports:
-                        - '30000:30000'
+                        - '30001:30001'
                 volumes:
                         - ./build/nginx.conf:/etc/nginx/nginx.conf:ro
                 networks:
