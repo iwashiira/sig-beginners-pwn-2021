@@ -11,13 +11,13 @@ RUN groupadd -r user && useradd -r -g user user
 
 COPY --chown=root:user ./build/start.sh /home/user/start.sh
 COPY --chown=root:user ./build/flag /home/user/flag
-COPY --chown=root:user ./dist/where_is_systembinsh /home/user/where_is_systembinsh
+COPY --chown=root:user ./dist/esper /home/user/esper
 COPY --chown=root:root ./build/ctf.conf /etc/xinetd.d/ctf
 
 WORKDIR /home/user
 
 RUN chmod 444 ./flag && \
-    chmod 555 ./where_is_systembinsh && \
+    chmod 555 ./esper && \
     chmod 555 ./start.sh && \
     chmod 444 /etc/xinetd.d/ctf
 

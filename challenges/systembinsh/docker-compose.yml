@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-        systembinsh:
+        ctf:
                 restart: always
                 build: ./
                 read_only: true
                 networks:
                         - internal
-        proxy_0:
+        proxy:
                 restart: always
                 image: nginx
                 ports:
@@ -18,7 +18,7 @@ services:
                         - default
                         - internal
                 depends_on:
-                        - systembinsh
+                        - ctf
 
 networks:
         default:
