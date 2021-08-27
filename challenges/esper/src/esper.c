@@ -30,7 +30,7 @@ int main()
 	puts("This is second step!");
 	puts("Do you know Logical Operation?");
 	scanf("%d", &number);
-	if (number != (a&b)+(a|b)) {puts("Bye"); return 0;}
+	if (number != (a&9998)+(a|129873)) {puts("Bye"); return 0;}
 	puts("This is last step!");
 	puts("One more Esper check!");
 	int x = 11, y = 20, z = 33;
