@@ -10,7 +10,7 @@ int func(){
 
 int check(int a, int b, int c)
 {
-	char string[30] = "This is local variable spaces";
+	char string[30] = "local variable spaces";
 	int number = 0;
 	int ans = a*b*c + (a-b-c)*c + (a+b-c)*a*b*c*c - a*c;
 	scanf("%d", &number);
@@ -23,15 +23,15 @@ int main()
 {
 	int a = 11, b = 100;
 	int number;
-	puts("This is first step!");
+	puts("This is the first step!");
 	puts("Are you Esper?");
 	scanf("%d", &number);
 	if (number != a*b) {puts("Bye");return 0;}
-	puts("This is second step!");
+	puts("This is the second step!");
 	puts("Do you know Logical Operation?");
 	scanf("%d", &number);
 	if (number != (a&9998)+(a|129873)) {puts("Bye"); return 0;}
-	puts("This is last step!");
+	puts("This is the last step!");
 	puts("One more Esper check!");
 	int x = 11, y = 20, z = 33;
 	number = check(x, y, z);
