@@ -7,7 +7,7 @@ services:
                 read_only: true
                 networks:
                         - internal
-        proxy0:
+        proxy_0:
                 restart: always
                 image: nginx
                 ports:
