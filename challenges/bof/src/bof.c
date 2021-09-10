@@ -3,8 +3,9 @@
 
 int main()
 {
-	char* binsh = "/bin/sh";
 	char buf[30];
+	printf("System() Address is %p\n", system);
+	puts("> ");
 	scanf("%s", buf);
 	puts(buf);
 	return 0;
