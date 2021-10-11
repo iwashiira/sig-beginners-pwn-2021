@@ -2,7 +2,7 @@
 
 # 環境構築
 
-[host]　Vagrant,Virtualbox, Ghidraをそれぞれインストールすること。
+[host]　Vagrant,Virtualbox, Ghidraをそれぞれインストールすること。Vagrantの代わりにWSL2を使ってもよい。
 
 	Vagrant: generic/ubuntu1804を使う
 		https://www.vagrantup.com/downloads
